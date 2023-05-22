@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/x-icon" href="/Asset/Img/icon.png">
+    <link rel="stylesheet" href="2.css">
+    <title>1st Monthsary</title>
+</head>
+<body>
+    <nav class="navbar box">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Memories</a></li>
+        <li><a href="#">Goals</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">About Our self</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        
+        <img src="/Asset/Img/car1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade"> 
+        <img src="/Asset/Img/car2.jpg" style="width:100%">
+        
+        </div>
+        <div class="mySlides fade">
+
+        <img src="/Asset/Img/car3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="/Asset/Img/car4.jpg" style="width:100%">
+            
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <script>
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+</main>
+<footer>
+    <div class="container">
+    <div class="row">
+            <div class="col">
+                <h3>Contact Me</h3>
+                <ul>
+                    <li>Cogon Street</li>
+                    <li>Tacloban, Philippines 6500</li>
+                    <li>Phone: +63-905-416-9075</li>
+                    <li>Email: marinojerome@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

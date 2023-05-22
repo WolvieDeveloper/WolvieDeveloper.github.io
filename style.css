@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+    font-family: sans-serif;
+    /* overflow: hidden; Hide scrollbars */
+    
+}
+
+
+
+/* Navigation bar */
+.navbar {
+
+    position: sticky;
+    font-family: sans-serif;
+    padding-top: 25px;
+    background-color: #073f29;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    animation: load 1s;
+    
+  }
+  
+  .navbar ul {
+    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar p{
+    color: white;
+  }
+  .navbar li {
+    
+    margin: 0 20px;
+  }
+  
+ .navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  transition: all 0.5s ease;
+  }
+  
+.navbar a:hover {
+  border: 1px solid rgb(0, 255, 64);
+  background-color: #76eebe;
+  border-radius: 30px;
+  color: #071f29;
+  }
+/* End of Navigation bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    width: 30%;
+    margin-bottom: 20px;
+    
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Main */
+  main {
+    background-image: url(/Asset/Img/mahal.jpg);
+    background-color: #1b9e6a85;
+    background-size: cover;
+    background-position: center;
+    animation: zoominout 30s     infinite;
+    color: #fff;
+    padding: 100px 0;
+  
+    
+  }
+  .bg{
+    background-color: #0c191469;
+    height: 150px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  main p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+ 
+  .btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #76eebe;
+    color: #071f29;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #071f29;
+    color: #76eebe;
+  }
+
+/* Keyframes */
+  @keyframes zoominout{
+    0% {background-size:100%; }
+    50% {background-size:200%; }
+    100% {background-size:100%; }
+  }
+  @keyframes load{
+    0% {
+        width: 100%;
+        color: greenyellow;
+    }
+    50%{
+        width: 150%;
+    }
+    100% {
+        width: 100%;
+    }
+}
